@@ -3,8 +3,9 @@ body {
   background: white;
   color: yellow;
   display: flex;
-  padding: 0; }
+  padding: 0;
 =======
-  background: pink;
-  color: red; }
+  background: lightpink;
+  color: red;
 >>>>>>> colors
+}
