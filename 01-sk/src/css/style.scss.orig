@@ -1,0 +1,11 @@
+body {
+<<<<<<< HEAD
+  background: white;
+  color: yellow;
+  display: flex;
+  padding: 0;
+=======
+  background: lightpink;
+  color: red;
+>>>>>>> colors
+}

@@ -1,8 +1,5 @@
 body {
 <<<<<<< HEAD
-  color: #222; }
-=======
-<<<<<<< HEAD
   background: white;
   color: yellow;
   display: flex;
@@ -10,5 +7,4 @@ body {
 =======
   background: pink;
   color: red; }
->>>>>>> colors
 >>>>>>> colors
