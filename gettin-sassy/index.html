@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>boilerplate</title>
+    <!-- npm run build + src/css/style.min.css for final deploy -->
+    <!-- <link rel="stylesheet" href="src/css/style.min.css"> -->
+    <link rel="stylesheet" href="src/css/style.css">
+<body>
+  <h1>Lorem ipsum dolor sit amet</h1>
+  <h2>Lorem ipsum dolor sit amet</h2>
+  <div class="rgb-color-wheel">
+    <div>
+      adjust-hue($base-color, 90)
+    </div>
+    <div>
+      $base-color
+    </div>
+    <div>
+      adjust-hue($base-color, 180)
+    </div>
+  </div>
+  <div class="shades-of-red">
+    <div>
+      lighten($base-color, 20%) 
+    </div>
+    <div>
+      $base-color
+    </div>
+    <div>
+      darken($base-color, 20%)
+    </div>
+  </div>
+  <div class="saturate">
+    <div>
+      saturate($base-color, 20%) 
+    </div>
+    <div>
+      $base-color
+    </div>
+    <div>
+      desaturate($base-color, 20%)
+    </div>
+  </div>
+  <div class="grayscale">
+    <div>
+      background: grayscale($base-color);
+    </div>
+    <div>
+      background: complement($base-color);
+    </div>
+    <div>
+      background: invert($base-color);
+    </div>
+  </div>
+  <script src="_build/bundle.js"></script>
+</body>
+</html>

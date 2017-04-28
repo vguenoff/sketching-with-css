@@ -1,0 +1,80 @@
+// A bunch of Sass variables
+$body-copy-font: verdana, san-serif;
+$header-copy-font: georgia, serif;
+$dark-grey: #222;
+$base-font-size: 1em;
+$base-width: 100%;
+$big-font-size: $base-font-size * 2;
+$biggest-font-size: $base-font-size * 3;
+
+body {
+  color: $dark-grey;
+  font-family: $body-copy-font;
+  font-size: $base-font-size;
+}
+h1, h2 {
+  font-family: $header-copy-font;
+}
+h1 {
+  font-size: $biggest-font-size;
+}
+h2 {
+  font-size: $big-font-size;
+}
+body > div {
+  margin: 1em;
+  display: flex;
+  div {
+    width: ($base-width / 3);
+    height: 10vh;
+    padding: 1em;
+  }
+}
+.rgb-color-wheel {
+  $base-color: red;
+  div:nth-of-type(1) {
+    background: adjust-hue($base-color, 90);
+  }
+  div:nth-of-type(2) {
+    background: $base-color;
+  }
+  div:nth-of-type(3) {
+    background: adjust-hue($base-color, 180);
+  }  
+}
+.shades-of-red {
+  $base-color: red;
+  div:nth-of-type(1) {
+    background: lighten($base-color, 20%);
+  }
+  div:nth-of-type(2) {
+    background: $base-color;
+  }
+  div:nth-of-type(3) {
+    background: darken($base-color, 20%);
+  }
+}
+.saturate {
+  $base-color: #ad141e;
+  div:nth-of-type(1) {
+    background: saturate($base-color, 20%);
+  }
+  div:nth-of-type(2) {
+    background: $base-color;
+  }
+  div:nth-of-type(3) {
+    background: desaturate($base-color, 20%);
+  }
+}
+.grayscale {
+  $base-color: #ad141e;
+  div:nth-of-type(1) {
+    background: grayscale($base-color);
+  }
+  div:nth-of-type(2) {
+    background: complement($base-color);
+  }
+  div:nth-of-type(3) {
+    background: invert($base-color);
+  }
+}

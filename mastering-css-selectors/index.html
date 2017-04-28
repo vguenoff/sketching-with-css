@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>boilerplate</title>
+    <!-- npm run build + src/css/style.min.css for final deploy -->
+    <!-- <link rel="stylesheet" href="src/css/style.min.css"> -->
+    <link rel="stylesheet" href="src/css/style.css">
+<body>
+  <div>
+    <ul>
+      <li>outer list</li>
+      <li>
+        <ul>
+          <li>inner list</li>
+          <li>inner list</li>
+        </ul>
+      </li>
+      <li>outer list</li>
+      <li>outer list</li>
+    </ul>
+  </div>
+  <div class="adjacency-selectors">
+    <h3>Example Header</h3>
+    <p>This is the first paragraph and I should be italicized.</p>
+    <p>This is the second paragraph and I should be normal.</p>
+  </div>
+  <div class="all-sublings">
+    <p>A paragraph before the header</p>
+    <h3>Example Header</h3>
+    <p>This is the first paragraph, and I should be italicized.</p>
+    <div>
+      <p>This won't be italic, because it is one level deeper in the hierarchy.</p>
+    </div>
+    <p>This is the second paragraph, and I should also be italicized.</p>
+  </div>
+  <script src="_build/bundle.js"></script>
+</body>
+</html>
